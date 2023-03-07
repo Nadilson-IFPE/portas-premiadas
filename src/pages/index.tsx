@@ -1,12 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import Presente from '@/components/Presente'
+import Porta from '@/components/Porta'
+import PortaModel from '@/model/portamodel'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const p1 = new PortaModel(1, false, true)
+  const p2 = new PortaModel(2)
+  const p3 = new PortaModel(3)
+  const p4 = new PortaModel(4)
+  const p5 = new PortaModel(5)
+  const p6 = new PortaModel(6)
+
   return (
     <>
       <Head>
@@ -16,8 +23,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <Presente />
+      <div style={{ display: "flex" }}>
+        <Porta porta={p1} />
+        <Porta porta={p2} />
+        <Porta porta={p3} />
+        <Porta porta={p4} />
+        <Porta porta={p5} />
+        <Porta porta={p6} />
       </div>
 
     </>
