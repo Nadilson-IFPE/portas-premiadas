@@ -11,6 +11,7 @@
 .estrutura {
     display: flex;
     flex-grow: 1;
+    flex-direction: column-reverse;
     border-left: 5px solid brown;
     border-top: 5px solid brown;
     border-right: 5px solid brown;
@@ -24,7 +25,7 @@
     align-items: center;
     flex-grow: 1;
     background-color: chocolate;
-    padding: 15px;   
+    padding: 15px;
     user-select: none;
     font-weight: bold;
 }
