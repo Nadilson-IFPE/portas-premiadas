@@ -1,10 +1,5 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Presente from '@/components/Presente'
-import Porta from '@/components/Porta'
-import PortaModel from '@/model/portamodel'
-import { useState } from 'react'
-import { atualizarPortas, criarPortas } from '@/functions/portas'
 
 const inter = Inter({ subsets: ['latin'] })
 
